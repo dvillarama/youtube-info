@@ -9,6 +9,7 @@ Things you may want to cover:
 
 * No Database
 
-* How to run the test suite
+* Ruby version 2.4.1
 
+* How to run the test suite
     bundle exec rake

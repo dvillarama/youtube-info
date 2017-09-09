@@ -1,1 +1,10 @@
-hello show <%= @video.view_count %>
+<div class="container-result">
+  <div class="info">This video has <%= @video.view_count %> views!</div>
+  <div class="info"><%= @video.channel_title %> - <%= @video.video_id %></div>
+
+  <div> <%= @video.embed_html.html_safe %> </div>
+
+  <div class="info">
+    <%= link_to "Let's query some more", videos_path %>
+  </div>
+</div>

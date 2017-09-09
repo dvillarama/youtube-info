@@ -1,6 +1,17 @@
-what is your video?
+<div class="container">
+  <div class="info">Enter your YouTube Video ID</div>
 
-<%= form_tag('videos')  do |f| %>
-  <%= text_field_tag :id %>
-  <%= button_tag 'Go', type: :submit %>
-<% end %>
+  <%= form_tag('videos')  do |f| %>
+    <%= text_field_tag :id %>
+    <%= button_tag 'Go', type: :submit %>
+  <% end %>
+
+  <div class="info">Or pick one from below</div>
+
+  <%= form_tag('videos')  do |f| %>
+    <%= select_tag "id", options_for_select({ "ElectroBOOM": "QAjZaSlWG50", "Kripparrian": "dcYZPuYQAKo",
+                                              "blueplanetsurf": "ySG--pmxD7I", "Peter Hurley": "Qe3oJnFtA_k",
+                                              "First We Feast": "ldm8mnn-ULI" }, "ElectroBOOM") %>
+    <%= button_tag 'Go', type: :submit %>
+  <% end %>
+</div>

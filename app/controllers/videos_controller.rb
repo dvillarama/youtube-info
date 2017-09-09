@@ -1,4 +1,6 @@
-class VideosController < ActionController::Base
+class VideosController < ApplicationController
+  protect_from_forgery with: :null_session
+
   def index
   end
 

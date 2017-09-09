@@ -1,3 +1,55 @@
 // Place all the styles related to the Videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+//
+.container, .container-result {
+  width: 400px;
+  margin: 100px auto 0;
+  padding: 40px;
+  text-align: center;
+  border: solid 1px #28aadc;
+}
+
+.container-result {
+  width: 500px;
+  margin: 50px auto 0;
+  padding: 40px;
+  text-align: center;
+  border: solid 1px #28aadc;
+  .info {
+    padding: 15px 10px;
+  }
+}
+
+.info {
+  padding: 25px 10px;
+  font-size: 30px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 20px;
+  width: 210px;
+  margin-right: 20px;
+}
+
+a{ text-decoration: none; }
+
+a, button {
+  padding: 0.33rem 1.5rem;
+  color: #28aadc;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 12rem;
+  border: .2rem solid #28aadc;
+  -webkit-transition: color .3s,border .3s;
+  transition: color .3s,border .3s;
+  &:hover {
+    color: #166888;
+    border: .2rem solid #166888;
+  }
+}
+

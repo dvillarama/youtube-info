@@ -25,7 +25,20 @@ class Video
     end
   end
 
+  # delegate a few methods
   def view_count
     internal_video.view_count
+  end
+
+  def description
+    internal_video.description
+  end
+
+  def channel_title
+    internal_video.channel_title
+  end
+
+  def embed_html
+    internal_video.embed_html
   end
 end
