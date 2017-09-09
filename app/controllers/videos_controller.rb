@@ -8,7 +8,7 @@ class VideosController < ApplicationController
     @video = Video.new params['id']
 
     unless @video.valid?
-      flash[:notice] = "Sorry I could not find that video.  Try Again."
+      flash[:alert] = "Sorry I could not find that video.  Try Again."
       redirect_to videos_url
     end
   end
